@@ -182,6 +182,7 @@ body{
   text-align: center;
 }
 .projects{
+
   margin-bottom: 100%;
 }
 #CV{
@@ -199,7 +200,7 @@ body{
   width:auto;
 }
 img{
-  width: 375px;
+  width: 300px;
 }
 
 .icons img {
