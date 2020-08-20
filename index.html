@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Fanwood+Text:ital@1&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class ="logo">
+    <H1>St3P</H1>
+  </div>
+
+<div class ="wrapper">
+
+
+
+  <div class="sandwhich_container">
+    <div class="sandwhich" onclick="myFunction(this)">
+        <div class="which1"></div>
+        <div class="which2"></div>
+        <div class="which3"></div>
+    </div>
+</div>
+
+  <div class="navbar">
+    <a href="#Home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contacts</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a id="Home"></a>
+<div class ="Home">
+    <div id="typewriter"></div>
+    <script type='text/javascript'>
+    const typewriter = new Typewriter('#typewriter', {
+    loop: false,
+    });
+    typewriter.changeDelay(2);
+    typewriter.changeDeleteSpeed(0.1);
+    typewriter.typeString("You looking for someone?<br>")
+    .pauseFor(1000)
+    .typeString("I guess, you're looking for <strong>him</strong> aren't you?<br>")
+    .pauseFor(1000)
+    .typeString("Here's all I know about him.")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString("His a stubborn focused individual who<br> ")
+    .pauseFor(500)
+    .typeString("loves to cook and make this looks nice.<br>")
+    .pauseFor(500)
+    .typeString("His a beginner front-end developer<br>")
+    .pauseFor(500)
+    .typeString("and still trying to expand his skills.<br>")
+    .pauseFor(500)
+    .typeString("<br> Luckily He left his CV.")
+    .start();
+    </script>
+    <div id='CV'></div>
+  </div>
+  <a id="about"></a>
+  <div class ="about">
+    <div id="typewriter1"></div>
+    <script type='text/javascript'>
+    const typewriter1 = new Typewriter('#typewriter1', {
+    loop: false,
+    });
+    typewriter1.changeDelay(1);
+    typewriter1.typeString("My name is <strong>Stephen Virtudes.</strong><br><br>")
+    .typeString("I'm Currently studying in <strong>University of Northampton<strong><br>")
+    .typeString("The course I'm studying is Business Computing<br>")
+    .typeString("I'm about to start my <strong>Third year<strong><br>")
+    .typeString("I love to cook and make myself <strong>Food<strong><br>")
+    .typeString("I do love my <strong>Video Games</strong> and <strong>my eventual sausage dog!</strong>")
+
+    .start();
+    </script>
+  </div>
+
+
+
+
+  <a id="projects"></a>
+  <div class ="beforeProject">
+    <div id="typewriter2"></div>
+    <script type='text/javascript'>
+    const typewriter2 = new Typewriter('#typewriter2', {
+    loop: false,
+    });
+    typewriter2.typeString("Here's some of my work.")
+    .start();
+    </script>
+  </div>
+  
+  <div class ="projects">
+    <div class="pictures">
+      <div id ="p1">
+        <img src="images/First Website.PNG" alt="Old">
+        <div id="typewriter3"></div>
+        <script type='text/javascript'>
+        const typewriter3 = new Typewriter('#typewriter3', {
+        loop: false,
+        });
+        typewriter3.typeString("First Portfolio Website")
+        .start();
+        </script>
+      </div>
+      <div id ="p2">
+        <img src="images/PHP Project.PNG" alt="Toms">
+        <div id="typewriter4"></div>
+        <script type='text/javascript'>
+        const typewriter4 = new Typewriter('#typewriter4', {
+        loop: false,
+        });
+        typewriter4.typeString("PHP Project<br>")
+        .start();
+        </script>
+      </div>
+
+      <div id ="p3">
+        <img src="images/First Year.PNG" alt="First Year">
+        <div id="typewriter5"></div>
+        <script type='text/javascript'>
+        const typewriter5 = new Typewriter('#typewriter5', {
+        loop: false,
+        });
+        typewriter5.typeString("News Website<br>")
+        typewriter5.typeString("And More to come!")
+        .start();
+        </script>
+      </div>
+      </div>
+  </div>
+
+  <a id="contact"></a>
+  <div class ="contacts">
+<h2>You looking for me?</h2>
+
+<p>You can find me on these!</p>
+<p>My email is: sjtvirtudes@gmail.com</p>
+<div class="icons">
+  <ul>
+      <li><a href="http://twitter.com/@sjtv16"><img src="images/twitter.svg"></a></li>
+      <li><a href="https://www.linkedin.com/in/stephen-virtudes-027657199/"><img src="images/linkdin.svg"></a></li>
+      <li><a href="https://github.com/StephenVirtudes"><img src="images/github.svg"></a></li>
+  </ul>
+  </div>
+  </div>
+ 
+  
+</div>
+</body>
+</html>

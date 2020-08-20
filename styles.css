@@ -1,0 +1,249 @@
+
+body{
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 100%;
+  font-family: 'Encode Sans', sans-serif;
+  font-size:25px;
+}
+
+
+#CV{
+  position: relative;
+  left: -135px;
+}
+
+.logo
+{
+  font-family: 'Fanwood Text','serif';  
+  color: white;
+  font-size: 30px;
+  left: 15%;
+  position: fixed;
+  top: 5%;
+  font-style: italic;
+
+}
+
+.Home
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+}
+.about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+
+.beforeProject{
+    width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 40px;
+  z-index: 10;
+  top:20%;
+  left: 320px;
+  text-align: right;
+  border-right: 2px solid white;
+  height: 600px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  margin:30px;
+}
+
+.navbar a:after {    
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#CV a{
+  color: orangered;
+  text-decoration: none;
+}
+
+#CV a:after {    
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(179, 252, 255);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#CV a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures{
+  width:35%;
+}
+
+
+img{
+  width: 1000px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.contacts{
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.icons {
+  width: auto;
+  height: auto;
+  padding-top: 2%;
+  margin-right: 40px;
+}
+
+.icons ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.icons img {
+  width: 150px;
+}
+
+
+
+/* MEDIA QUERIES for mobile dimensions used are Google Pixel XL */
+
+/* Portrait */
+@media only screen and (max-width:1366px){
+body{
+  font-size: 22px;
+
+}
+.Home{
+  text-align: center;
+}
+.about
+{
+  text-align: center;
+}
+.projects{
+  margin-bottom: 100%;
+}
+#CV{
+  left: 1%;
+}
+.logo{
+  position: absolute;
+  left:8%;
+  top:-2%;
+}
+.navbar{
+  display: none;
+}
+.pictures{
+  width:auto;
+}
+img{
+  width: 375px;
+}
+
+.icons img {
+  width: 75px;
+}
+.sandwhich_container {
+  position: fixed;
+  right: 60px;
+  top: 60px;
+}
+
+.sandwhich {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.which1,
+.which2,
+.which3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .which1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .which2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .which3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+}
+
+
+    
+
