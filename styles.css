@@ -165,6 +165,112 @@ flex-direction: column;
 }
 
 
+/* header */
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+
+  text-decoration: none;
+  color: orangered;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+text-decoration: underline;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  display: none;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 20px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  display: flex;
+  flex-direction: column;
+  left: 63%;
+  top: 8%;
+  position: fixed;
+  opacity: 80%;
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
 
 /* MEDIA QUERIES for mobile dimensions used are Google Pixel XL */
 
@@ -243,6 +349,30 @@ img{
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+
+.header li {
+  float: left;
+}
+.header li a {
+  padding: 20px 30px;
+}
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+
+}
+
+.header .menu-icon {
+display: inline-block;
+position: fixed;
+left:81%;
+top: 1em;
+}
+
+
+
 }
 
 

@@ -20,13 +20,6 @@
 
 
 
-  <div class="sandwhich_container">
-    <div class="sandwhich" onclick="myFunction(this)">
-        <div class="which1"></div>
-        <div class="which2"></div>
-        <div class="which3"></div>
-    </div>
-</div>
 
   <div class="navbar">
     <a href="#Home">Home</a>
@@ -37,19 +30,23 @@
 
 
 
+ <header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
 
 
 
 
-
-
-
-
-
-  
-  <a id="Home"></a>
-<div class ="Home">
+    <a id="Home"></a>
+    <div class ="Home">
     <div id="typewriter"></div>
     <script type='text/javascript'>
     const typewriter = new Typewriter('#typewriter', {
@@ -91,7 +88,6 @@
     .typeString("I'm about to start my <strong>Third year<strong><br>")
     .typeString("I love to cook and make myself <strong>Food<strong><br>")
     .typeString("I do love my <strong>Video Games</strong> and <strong>my eventual sausage dog!</strong>")
-
     .start();
     </script>
   </div>
